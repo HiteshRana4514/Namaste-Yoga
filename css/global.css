@@ -1,0 +1,514 @@
+/* Eric Meyer's Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+  /* 
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+   */
+}
+
+html.active-html {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Font Face */
+
+@font-face {
+  font-family: "Arial Italic";
+  src: url('../fonts/ariali-webfont.woff2') format('woff2'),
+    url('../fonts/ariali-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial Bold";
+  src: url('../fonts/arialbd-webfont.woff2') format('woff2'),
+    url('../fonts/arialbd-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.2;
+  color: #000;
+  font-family: "Arial Bold", sans-serif;
+}
+
+img {
+  /* max-width: 100%; */
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+body img {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+figure {
+  /* margin-bottom: 0; */
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*
+ 2.0.1) Font Face
+ -----------------------------*/
+
+/*Put Your font face Styles here*/
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-family: "Arial Bold", sans-serif;
+}
+
+/* input,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+} */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  border: none;
+}
+
+input {
+  line-height: normal;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  border: none;
+  outline: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  border: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="file"] {
+  cursor: pointer;
+  line-height: normal;
+  overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+  color: #999;
+  border-color: #ccc;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+
+/* Fix Input Zoom on devices older than iPhone 5: */
+
+@media screen and (max-device-width: 767px) {
+
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"] {
+    font-size: 14px !important;
+  }
+}
+
+/*
+ 2.0.4) List Styles
+ ---------------------------------*/
+
+button {
+  border: none;
+  background: transparent;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/*
+ 2.0.9) Sprite Icons
+ -------------------------*/
+
+/* [class^="icon-"],
+[class*="icon-"] {
+  background-image: url("../images/sprite.png");
+  background-size: 400px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 1px;
+  vertical-align: text-top;
+  width: 14px;
+  font-size: 0;
+} */
+
+/*global heading*/
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  line-height: 20px;
+  color: rgba(30, 30, 30, 0.50);
+  font-family: 'Overpass', sans-serif;
+  /* font-size: 18px; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: capitalize;
+  display: block;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #F47E20;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.custom-select__option:hover,
+.custom-select__option:focus {
+  background-color: #fff;
+}
+
+.custom-select--active .custom-select__option--value {
+  border-bottom: 1px solid rgba(86, 86, 86, 0.30);
+  border-radius: 0;
+}
+
+.custom-select__option--value::after {
+  width: 24px;
+  height: 24px;
+  right: 1.75rem;
+  border-width: 0;
+  background: url('../images/plus.png') no-repeat;
+}
+
+.custom-select__option {
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #A8A6A6;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 20px; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.custom-select__option--value {
+  padding: 14px 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  color: #727272;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 20px; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  border-bottom: 1px solid rgba(86, 86, 86, 0.30);
+  margin-bottom: 15px;
+}
+
+.custom-select__option--value:focus {
+  border-bottom: 1px solid rgba(86, 86, 86, 0.30);
+}
+
+.custom-select__dropdown {
+  border-width: 1px !important;
+  padding: 10px 0;
+}
+
+.custom-select__dropdown .custom-select__option {
+  padding: 9px 13px;
+  transition: all 0.5s;
+}
+
+.custom-select__dropdown .custom-select__option:hover {
+  color: #727272;
+}
+
+/* Containers*/
+
+.container {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1440px;
+  /* max-width: 1306px; */
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 0 53px 0 81px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .container {
+    width: auto !important;
+    max-width: 1600px !important;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1800px  !important;
+  }
+}
+a:focus, a:hover{
+  text-decoration: none !important;
+  
+}
+/* a:focus{
+  outline: none !important;
+} */
+
+
+/* body {
+  position: relative;
+  height: 5000px;
+}
+
+body::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../images/bg-perfect.png') no-repeat center top;
+  opacity: 0.5;
+  z-index: 999;
+  pointer-events: none;
+} */
