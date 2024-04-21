@@ -5,6 +5,7 @@
         align-items: center;
         width: 70%;
         justify-content: space-between;
+        background: none;
         padding: 0;
     }
     .navigation.active{
@@ -26,6 +27,7 @@
     }
     .navigation li a{
         padding: 4px 0;
+        font-size: 18px;
     }
     .navigation li::after{
         content: "";
@@ -33,7 +35,7 @@
         display: block;
         width: 0%;
         height: 2px;
-        background-color: #fff;
+        background-color: #000;
         bottom: 0px;
         transition: 0.4s;
         left: 0;
@@ -46,5 +48,14 @@
     }
     .mob-menu{
         display: none;
+    }
+    .banner-slide{
+        min-height: 820px;
+    }
+    .slide-content h1{
+        font-size: 50px;
+    }
+    .form-wrap{
+        width: 500px;
     }
 }
