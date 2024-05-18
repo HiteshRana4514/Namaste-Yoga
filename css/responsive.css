@@ -22,7 +22,7 @@
     }
 
     .navigation.active {
-        display: flex;
+        display: block;
     }
 
     .navigation .container {
@@ -114,9 +114,13 @@
     }
     .number-btn.mob-number{
         display: none;
+        
     }
     .number-btn.desk-number{
         display: block;
+    }
+    body.active{
+        overflow:auto;
     }
 
 }

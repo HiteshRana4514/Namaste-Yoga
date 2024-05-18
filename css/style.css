@@ -58,7 +58,7 @@ body.active{
     border-bottom: 1px solid #fff;
 }
 .number-btn{
-    display: inline-flex;
+    display: flex;
     padding: 21px 35px;
     background-color: #e5c466;
     font-size: 14px;
@@ -72,6 +72,9 @@ body.active{
 .number-btn:hover{
     background-color: #fff;
     color: #181a17;
+}
+.number-btn.mob-number{
+    margin-left: auto;
 }
 .number-btn.desk-number{
     display: none;
@@ -118,7 +121,9 @@ body.active{
 .banner{
     background-color: #468D76;
     min-height: 700px;
+    position: relative;
 }
+
 .banner-slider {
     position: relative;
 }
