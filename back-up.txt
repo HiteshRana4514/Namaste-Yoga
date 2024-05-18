@@ -1,0 +1,32 @@
+<div class="banner-slider">
+                <div class="banner-slide">
+                    <img src="images/banner-1.jpg" alt="banner-1">
+                    <div class="slide-content">
+                        <h1>Keeping Your Mind in Best Condition</h1>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="images/banner-2.jpg" alt="banner-1">
+                    <div class="slide-content">
+                        <h1>Basic Yoga and Meditation for Beginners</h1>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="images/banner-3.jpg" alt="banner-1">
+                    <div class="slide-content">
+                        <h1>Slide-3</h1>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="images/banner-4.jpg" alt="banner-1">
+                    <div class="slide-content">
+                        <h1>Slide-4</h1>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="images/banner-5.jpg" alt="banner-1">
+                    <div class="slide-content">
+                        <h1>Slide-5</h1>
+                    </div>
+                </div>
+            </div>

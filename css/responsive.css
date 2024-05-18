@@ -1,61 +1,188 @@
-@media all and (min-width: 768px){
-    .navigation{
-        display: flex;
+@media all and (min-width: 550px){
+    .banner-slide{
+        min-height: 295px;
+    }
+}
+@media all and (min-width: 768px) {
+    .header {
+        padding: 25px 0;
+    }
+
+    .navigation {
+        display: block;
         position: static;
         align-items: center;
-        width: 70%;
+        width: 55%;
         justify-content: space-between;
         background: none;
-        padding: 0;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 30px;
+        height: auto;
     }
-    .navigation.active{
+
+    .navigation.active {
         display: flex;
     }
-    .navigation .container{
+
+    .navigation .container {
         justify-content: space-between;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
         align-items: center;
         margin-bottom: 0px;
-        width: 63%;
         justify-content: space-between;
+        gap: 10px;
     }
-    .navigation li{
-        padding:  0;
+
+    .navigation li {
+        padding: 0;
         position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 15px;
     }
-    .navigation li a{
+
+    .menu-item.active::after {
+        width: 100%;
+    }
+
+    .navigation li a {
         padding: 4px 0;
-        font-size: 18px;
+        font-size: 16px;
+        color: #181a17;
+        display: block;
     }
-    .navigation li::after{
+
+    .navigation li::after {
         content: "";
         position: absolute;
         display: block;
         width: 0%;
         height: 2px;
-        background-color: #000;
+        background-color: #EDCC85;
         bottom: 0px;
         transition: 0.4s;
         left: 0;
     }
-    .navigation li:hover::after{
+
+    .navigation li:not(:last-child):before {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: -15px;
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #468D76;
+    }
+
+    .navigation li:hover::after {
         width: 100%;
     }
-    .navigation li:not(:last-child){
+
+    .navigation li:not(:last-child) {
         border-bottom: 0;
     }
-    .mob-menu{
+
+    .mob-menu {
         display: none;
     }
-    .banner-slide{
+
+    .banner-slide {
         min-height: 820px;
     }
-    .slide-content h1{
+
+    .slide-content h1 {
         font-size: 50px;
     }
-    .form-wrap{
+
+    .form-wrap {
         width: 500px;
+    }
+    .banner-slide{
+        min-height: 350px;
+    }
+    .banner-slide img{
+        border-radius: 0 50px 0 50px;
+    }
+    .number-btn.mob-number{
+        display: none;
+    }
+    .number-btn.desk-number{
+        display: block;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    .navigation {
+        width: 45%;
+        padding: 15px 40px;
+    }
+    .banner{
+        padding: 60px 0;
+    }
+
+    .banner-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    .main-heading {
+        width: 55%;
+    }
+    .main-heading h1{
+        font-size: 54px;
+    }
+    .side-heading {
+        width: 40%;
+        margin-left: auto;
+        text-align: right;
+    }
+    .side-heading h3{
+        font-size: 35px;
+    }
+    .side-heading p{
+        font-size: 16px;
+        margin-bottom: 30px;
+        width: 71%;
+        margin-left: auto;
+    }
+    .side-heading a{
+        font-size: 14px;
+    }
+    .banner-slide{
+        min-height: 480px;
+    }
+    .banner-slide img{
+        border-radius: 0 60px 0 60px;
+    }
+}
+@media all and (min-width: 1280px) {
+    .main-heading h1{
+        font-size: 84px;
+    }
+    .side-heading a{
+        font-size: 16px;
+    }
+    .banner-slide{
+        min-height: 614px;
+    }
+    .banner-slide img{
+        border-radius: 0 70px 0 70px;
+    }
+}
+@media all and (min-width: 1400px){
+    .banner-slide{
+        min-height: 794px;
+    }
+    .banner-slide img{
+        border-radius: 0 90px 0 90px;
     }
 }

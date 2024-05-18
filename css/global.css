@@ -116,27 +116,13 @@ html.active-html {
 
 /* Font Face */
 
-@font-face {
-  font-family: "Arial Italic";
-  src: url('../fonts/ariali-webfont.woff2') format('woff2'),
-    url('../fonts/ariali-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Arial Bold";
-  src: url('../fonts/arialbd-webfont.woff2') format('woff2'),
-    url('../fonts/arialbd-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
   font-size: 100%;
   line-height: 1.2;
   color: #000;
-  font-family: "Arial Bold", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 img {
@@ -465,8 +451,8 @@ button {
 .container {
   padding: 0 10px;
   width: 100%;
-  max-width: 1272px;
-  /* max-width: 1306px; */
+  /* max-width: 1272px; */
+  max-width: 1306px;
   margin: 0 auto;
 }
 

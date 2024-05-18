@@ -1,6 +1,10 @@
+body.active{
+    overflow: hidden;
+}
 .header{
-    padding: 20px 0;
+    padding: 10px 0;
     position: relative;
+    background-color: #468D76;
 }
 .header .container{
     display: flex;
@@ -8,8 +12,8 @@
     align-items: center;
 }
 .logo{
-    width: 100px;
-    height: 50px;
+    width: 88px;
+    height: 67px;
 }
 .logo img{
     display: block;
@@ -23,8 +27,9 @@
     right: 0;
     width: 100%;
     padding: 20px;
-    background: #d4d4d4;
+    background: #468D76;
     z-index: 9999;
+    height: 100vh;
 }
 .navigation.active{
     display: block;
@@ -32,28 +37,44 @@
 .navigation ul{
     margin-bottom: 20px;
 }
-.navigation li{
-    /* padding: 10px 0px; */
-}
+
 .navigation li a{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     display: block;
     padding: 10px 0px;
+    font-family:"Sora", sans-serif;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.navigation li a:hover{
+    color: #e5c466;
+}
+.menu-item.active a{
+    color: #e5c466;
 }
 .navigation li:not(:last-child){
     border-bottom: 1px solid #fff;
 }
 .number-btn{
     display: inline-flex;
-    padding: 5px 8px;
-    background-color: aquamarine;
+    padding: 21px 35px;
+    background-color: #e5c466;
     font-size: 14px;
-    color: #000;
+    color: #fff;
     align-items: center;
     gap: 5px;
-    border-radius: 4px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.number-btn:hover{
+    background-color: #fff;
+    color: #181a17;
+}
+.number-btn.desk-number{
+    display: none;
 }
 .phone-icon{
     display: block;
@@ -74,7 +95,7 @@
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #000;
+    background-color: #fff;
     transition: 0.4s;
 }
 .mob-menu.active .mob-bar:nth-child(2){
@@ -94,11 +115,15 @@
     margin: auto 0;
     transform: rotate(-45deg);
 }
+.banner{
+    background-color: #468D76;
+    min-height: 700px;
+}
 .banner-slider {
     position: relative;
 }
 .banner-slide{
-    min-height: 525px;
+    min-height: 225px;
     position: relative;
     display: flex !important;
     justify-content: center;
@@ -113,6 +138,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    border-radius: 0 40px 0 40px;
 }
 .slide-content h1{
     font-size: 30px;
@@ -127,7 +153,7 @@
     margin: auto 0;
     z-index: 999;
     text-indent: -9999px;
-    display: block;
+    display: none !important;
     width: 40px;
     height: 40px;
 }
@@ -140,6 +166,27 @@
     right: 10px;
     background: url('../images/arrow-forward.svg') no-repeat center;
     background-size: 40px auto;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+.slick-dots li button{
+    text-indent: -9999px;
+}
+.slick-dots li{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.slick-dots li.slick-active{
+    width: 9px;
+    height: 9px;
+    background-color: #e5c466;
 }
 .appointment-form{
     display: none;
@@ -226,4 +273,64 @@
 }
 .appointment-btn:hover{
     background-color: #d4d4d4;
+}
+.banner{
+    padding: 30px 0;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.energy{
+    padding: 5px 10px;
+    display: inline-block;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'sora',sans-serif;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.main-heading h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'sora',sans-serif;
+}
+.sub-head{
+    color: #e5c466;
+}
+.side-heading h3{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'sora',sans-serif;
+    margin-bottom: 10px;
+}
+.side-heading p{
+    font-size: 14px;
+    color: #fff;   
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+.side-heading a{
+    color: #e5c466;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-flex;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+.side-heading a::after{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: url('../images/arrow.svg') no-repeat center;
+   
 }
