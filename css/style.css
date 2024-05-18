@@ -120,7 +120,6 @@ body.active{
 }
 .banner{
     background-color: #468D76;
-    min-height: 700px;
     position: relative;
 }
 
@@ -338,4 +337,152 @@ body.active{
     height: 7px;
     background: url('../images/arrow.svg') no-repeat center;
    
+}
+.yoga-quote{
+    padding: 60px 0 30px;
+    background-color: #E9F0EC;
+}
+.yoga-quote .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-wrap{
+    width: 90px;
+    height: 74px;
+    margin-bottom: 20px;
+}
+.icon-wrap img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.yoga-text{
+    width: 100%;
+    max-width: 825px;
+}
+.yoga-text p{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.yoga-question{
+    display: block;
+    font-size: 14px;
+    color: #e5c466;
+    text-align: center;
+    font-weight: 500;
+}
+.yoga-ways{
+    padding: 50px 0;
+    background: #E9F0EC;
+}
+.ways-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ways-text h3{
+    font-size: 25px;
+    color: #181a17;
+    font-family: 'sora', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ways-icon{
+    width: 60px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.ways-icon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ways-icon::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto 0;
+    width: 141px;
+    right: 101%;
+    height: 6px;
+    border-bottom: 1px solid #468D76;
+    border-top: 1px dashed #468D76;
+}
+.ways-icon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto 0;
+    width: 141px;
+    left: 101%;
+    height: 6px;
+    border-bottom: 1px solid #468D76;
+    border-top: 1px dashed #468D76;
+}
+.yoga-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.yoga-list-block{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.yoga-list-block h4{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'sora',sans-serif;
+    color: #e5c466;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.list-image{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #e5c466;
+}
+.list-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.list-text{
+    font-size: 14px;
+    color: #666;
+}
+.list-text a{
+    color: #e5c466;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-flex;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+.list-text a::after{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: url(../images/arrow.svg) no-repeat center;
 }

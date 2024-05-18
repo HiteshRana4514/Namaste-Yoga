@@ -122,7 +122,15 @@
     body.active{
         overflow:auto;
     }
-
+    .yoga-quote{
+        padding: 60px 0;
+    }
+    .yoga-list{
+        justify-content: space-around;
+    }
+    .yoga-list-block{
+        width: 40%;
+    }
 }
 
 @media all and (min-width: 1024px) {
@@ -166,6 +174,24 @@
     }
     .banner-slide img{
         border-radius: 0 60px 0 60px;
+    }
+    .yoga-quote{
+        padding: 80px 0;
+    }
+    .yoga-text p{
+        font-size: 24px;
+    }
+    .yoga-question{
+        font-size: 20px;
+    }
+    .ways-text h3{
+        font-size: 35px;
+    }
+    .yoga-list{
+        justify-content: space-between;
+    }
+    .yoga-list-block{
+        width: 20%;
     }
 }
 @media all and (min-width: 1280px) {
