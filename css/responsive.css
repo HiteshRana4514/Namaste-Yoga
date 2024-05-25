@@ -131,6 +131,15 @@
     .yoga-list-block{
         width: 40%;
     }
+    .services-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .service-block{
+        width: 48%;
+    }
 }
 
 @media all and (min-width: 1024px) {
@@ -192,6 +201,19 @@
     }
     .yoga-list-block{
         width: 20%;
+    }
+    .service-block{
+        width: 22%;
+        border-bottom: 0;
+    }
+    .services-head-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .our-services h3{
+        font-size: 35px;
     }
 }
 @media all and (min-width: 1280px) {
