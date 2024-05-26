@@ -140,6 +140,12 @@
     .service-block{
         width: 48%;
     }
+    .anchor-wrap{
+        right: -14px;
+        bottom: -10px;
+        left: auto;
+        margin: 0;
+    }
 }
 
 @media all and (min-width: 1024px) {
