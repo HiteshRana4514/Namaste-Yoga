@@ -570,14 +570,20 @@ body.active{
     height: 70px;
     background-color: #468D76;
     z-index: 99;
+    transition: all 0.4s;
 }
+
+.service-block a:hover{
+    background-color: #e5c466;
+}
+
 .service-block a{
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     background-color: #fff;
-    
+    transition: 0.4s;
 }
 .anchor-icon{
     display: block;
@@ -585,4 +591,105 @@ body.active{
     height: 100%;
     background: url('../images/arrow-up.png') no-repeat center;
     background-size: 30px 30px;
+}
+.footer{
+    padding: 30px 0;
+}
+.footer-logo-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.logo-block{
+    width: 90px;
+    height: 74px;
+    margin-bottom: 8px;
+}
+.logo-block img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.footer-logo-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'sora',sans-serif;
+    color: #468D76;
+}
+.footer-text{
+    font-size: 16px;
+    color: #181a17;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social-media a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #181a17;
+}
+.social-media i{
+    display: block;
+   width: 100%;
+   height: 100%;
+   background-size: 21px 18px;
+}
+.facebook{
+    background: url('../images/facebook.svg') no-repeat center;
+}
+.insta{
+    background:  url('../images/insta.svg') no-repeat center;
+}
+.linkdin{
+    background: url('../images/linkdin.svg') no-repeat center;
+}
+.left-footer{
+    margin-bottom: 30px;
+}
+.footer h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'sora',sans-serif;
+    margin-bottom: 15px;
+}
+.right-footer ul{
+    margin-bottom: 25px;
+}
+.right-footer li{
+    margin-bottom: 10px;
+}
+.right-footer li, .right-footer li a, .footer address{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+.right-footer-block{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.term-privacy a, .copyright span{
+    font-size: 14px;
+    font-family: 'sora',sans-serif;
+    color: #181a17;
+}
+.term-privacy a{
+    display: block;
+    text-align: center;
+}
+.term-privacy{
+    margin-bottom: 20px;
+}
+.right-footer-block{
+    margin-bottom: 30px;
+}
+.copyright span{
+    display: block;
+    text-align: center;
 }
