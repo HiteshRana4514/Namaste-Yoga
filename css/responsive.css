@@ -169,8 +169,8 @@
     .term-privacy{
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
-        margin-bottom: 0;
     }
     .term-privacy a{
         display: flex;
@@ -180,11 +180,7 @@
         content: "|";
         color: #181a17;
     }
-    .term-condition{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    
 }
 
 @media all and (min-width: 1024px) {
@@ -259,6 +255,17 @@
     }
     .our-services h3{
         font-size: 35px;
+    }
+    .term-privacy{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+    .term-condition{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 @media all and (min-width: 1280px) {
