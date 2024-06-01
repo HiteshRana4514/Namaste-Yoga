@@ -139,6 +139,7 @@
     }
     .service-block{
         width: 48%;
+        border-bottom: none !important;
     }
     .anchor-wrap{
         right: -14px;
@@ -164,7 +165,7 @@
     }
     .right-footer-block div{
         width: 40%;
-        padding-top: 35px;
+        padding-top: 15px;
     }
     .term-privacy{
         display: flex;
@@ -179,6 +180,15 @@
     .term-privacy a:not(:last-child)::after{
         content: "|";
         color: #181a17;
+    }
+    .classes-slider .slide{
+        padding: 0 10px;
+    }
+    .service-block h2{
+        font-size: 30px;
+    }
+    .our-classes h3{
+        font-size: 30px;
     }
     
 }

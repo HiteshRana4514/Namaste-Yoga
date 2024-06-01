@@ -182,10 +182,11 @@ body.active{
     text-indent: -9999px;
 }
 .slick-dots li{
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #fff;
+    cursor: pointer;
 }
 .slick-dots li.slick-active{
     width: 9px;
@@ -196,7 +197,7 @@ body.active{
     display: none;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -487,7 +488,7 @@ body.active{
     background: url(../images/arrow.svg) no-repeat center;
 }
 .our-services{
-    padding: 60px 0;
+    padding: 60px 0 30px;
     background-color: #468D76;
 }
 .service-quote{
@@ -521,6 +522,8 @@ body.active{
 }
 .service-block{
     margin-bottom: 40px;
+}
+.service-block:not(:last-child){
     border-bottom: 1px solid #d4d4d4;
     padding-bottom: 20px;
 }
@@ -541,7 +544,7 @@ body.active{
     background-color: #e5c466;
 }
 .service-block h2{
-    font-size: 30px;
+    font-size: 22px;
     color: #fff;
     font-family: 'sora',sans-serif;
     margin-bottom: 25px;
@@ -592,6 +595,74 @@ body.active{
     background: url('../images/arrow-up.png') no-repeat center;
     background-size: 30px 30px;
 }
+.our-classes{
+    padding: 50px 0;
+    background-color: #E9F0EC;
+}
+.upcomings{
+    border-color: #181a17;
+    color: #181a17;
+}
+.our-classes h3{
+    font-size: 25px;
+    color: #181a17;
+    font-family: 'sora', sans-serif;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.classes-img{
+    position: relative;
+    border-radius: 20px;
+}
+.classes-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.classes-slider .service-quote{
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+.classes-slider .service-quote span{
+    margin-bottom: 0;
+    font-weight: 400;
+    background-color: #fff;
+}
+.classes-img button.number-btn{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+}
+.classes-img .anchor-wrap{
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    left: auto;
+    background-color: #fff;
+    transition: all 0.4s;
+    padding: 0;
+}
+.classes-img .anchor-wrap:hover{
+    background-color: #e5c466;
+}
+.classes-img .service-quote{
+    border-bottom: none;
+}
+.classes-slider h4{
+    font-size: 22px;
+    color: #181a17;
+    font-family: 'sora', sans-serif;
+    margin-bottom: 25px;
+}
+
+
+
 .footer{
     padding: 30px 0;
 }
