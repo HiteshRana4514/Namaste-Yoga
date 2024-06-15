@@ -52,7 +52,7 @@
 
     .navigation li a {
         padding: 4px 0;
-        font-size: 16px;
+        font-size: 12px;
         color: #181a17;
         display: block;
     }
@@ -190,6 +190,20 @@
     .our-classes h3{
         font-size: 30px;
     }
+    .about-wrap{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .about-img{
+        width: 45%;
+        height: 600px;
+    }
+    
+    .about-text{
+        width: 45%;
+        padding: 0;
+    }
     
 }
 
@@ -308,4 +322,8 @@
     .banner-slide img{
         border-radius: 0 90px 0 90px;
     }
+    .about-text p{
+        font-size: 20px;
+    }
+
 }
