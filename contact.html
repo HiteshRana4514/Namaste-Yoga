@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Abhi Yoga</title>
+    <title>Contact Us - Abhi Yoga</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
@@ -25,11 +25,11 @@
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li class="menu-item "><a href="./index.html">Home</a></li>
-                        <li class="menu-item active"><a href="./about-us.html">About</a></li>
+                        <li class="menu-item"><a href="./index.html">Home</a></li>
+                        <li class="menu-item"><a href="#">About</a></li>
                         <li class="menu-item"><a href="./our-gallery.html">Gallery</a></li>
                         <li class="menu-item"><a href="#">Services</a></li>
-                        <li class="menu-item"><a href="./contact.html">Contact</a></li>
+                        <li class="menu-item active"><a href="./contact.html">Contact</a></li>
                     </ul>
                     <button type="button" class="number-btn mob-number">Make an Appointment</button>
                 </nav>
@@ -41,6 +41,8 @@
                 </Button>
             </div>
         </header>
+
+
         <section class="appointment-form">
             <div class="form-bg"></div>
 
@@ -49,7 +51,10 @@
                     <button type="button" class="inactive-btn">
                         <i class="inactive-icon"></i>
                     </button>
-                    <form action="">
+                    <!-- <form action="https://formsubmit.co/hiteshrana1218@gmail.com" method="POST" /> -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="f756e8ca-f381-4151-8935-a0091e58e100">
                         <div class="form-block">
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name" required>
@@ -71,28 +76,45 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+
+        <section class="contact-wrap">
             <div class="container">
                 <div class="service-quote">
-                    <span class="energy upcomings">Motivation</span>
+                    <span class="energy upcomings">Contact us</span>
                 </div>
-                <div class="ways-text">
-                    <h3>About US</h3>
-                </div>
-                <div class="about-wrap">
-                    <div class="about-img">
-                        <img src="./images/slide-4.jpg" alt="img">
+                <div class="contact-block">
+                    <div class="contact-details">
+                        <div class="contact-heading">
+                            <h1>Contact</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis quam illum! Tempora aspernatur temporibus nam qui culpa inventore accusamus rerum quas, accusantium, impedit explicabo ea, provident distinctio totam consequatur.</p>
+                        </div>
+                        <div class="location-details">
+                            <span class="location-head">OUR LOCATION</span>
+                            <address>Rattan Singh chowk 
+                                Near by Adarsh Hospital, Amritsar, Punjab, India</address>
+                        </div>
+                        <div class="contact-essentials">
+                            <div class="phone-no">
+                                <span class="essentials-head">CALL US</span>
+                                <span class="essentials-details"><a href="tel:9058791439"target="_blank">9058791439</a></span>
+                            </div>
+                            <div class="email-address">
+                                <span class="essentials-head">EMAIL US</span>
+                                <span class="essentials-details"><a href="mailto:Yogiabhilaksh0012@gmail.com?subject=Interest in Yoga Classes at Abhi Yoga Academy" target="_blank">Yogiabhilaksh0012@gmail.com</a></span>
+                            </div>
+                        </div>
+                        <button type="button" class="number-btn mob-number">Make an Appointment</button>
+
                     </div>
-                    <div class="about-text">
-                        <p>I'm <span class="about-imp"> yogi abhilaksh tyagi</span>. I'm a certified yoga trainer & a yoga instructor. I've completed my Bachelor's ( BSC ) with Yoga & my Post Graduation with ( Yogic Science ). I've <span class="about-imp">5 years</span> of experience of self-practice and <span class="about-imp">1 years</span> of experience of teaching yoga.I've Accupracture points certificate. Expert in <span class="about-imp">yoga for flexibility, yoga for women's & men, yoga for holistic living, yoga for kids, yoga for senior citizens</span> etc. 
-                            My teaching style is the combination of indian traditional yoga practice and modern approach. I always follow vinyasa flow in which strength, flexibility and stability of each and every body movement are emphasized together with proper alignment, breathing and focusing points. I hold that these techniques can create a balance between each practitioners body, mind and soul. These days I'm teaching yoga and with long experience of solving different problems that students usually encounter during their practice, I am running various courses and techniques, workshops to share my knowledge about yoga, anatomy and alignments with the hope of assisting more and more practitioners in increasing awareness about themselves and learned yoga.</p>
+                    <div class="location-map">
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3396.158549124526!2d74.87007347561703!3d31.656881774151767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM5JzI0LjgiTiA3NMKwNTInMjEuNSJF!5e0!3m2!1sen!2sin!4v1722070378758!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                </div>
-                <div class="about-appointment-btn">
-                    <button type="button" class="number-btn mob-number">Make an Appointment</button>
                 </div>
             </div>
         </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="left-footer">

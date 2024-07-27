@@ -204,6 +204,26 @@
         width: 45%;
         padding: 0;
     }
+    .contact-wrap .contact-block{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .contact-details{
+        width: 38%;
+    }
+    .location-map{
+        width: 58%;
+    }
+    #map{
+        height: 100%;
+    }
+    #map iframe{
+        height: 100%;
+    }
+    .contact-details .number-btn{
+        display: flex;
+    }
     
 }
 
