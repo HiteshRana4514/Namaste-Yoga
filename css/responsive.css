@@ -224,6 +224,9 @@
     .contact-details .number-btn{
         display: flex;
     }
+    .services-section .number-btn {
+        display: flex;
+    }
     
 }
 

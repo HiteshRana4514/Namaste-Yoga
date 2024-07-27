@@ -447,7 +447,6 @@ body.active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-bottom: 50px;
 }
 .yoga-list-block h4{
@@ -957,5 +956,64 @@ body.active{
     justify-content: center;
     margin-bottom: 20px;
 }
+.services-section {
+    background-color: #f9f9f9;
+    padding: 50px 0 10px;
+}
+
+.services-section p{
+    font-size: 16px;
+    color: #181a17;
+    margin-bottom: 20px;
+}
+
+.service-category {
+    margin: 40px 0;
+}
+
+.service-category h2 {
+    font-size: 30px;
+    color: #468D76;
+    margin-bottom: 10px;
+}
+
+.service {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service h3 {
+    color: #181a17;
+    font-size: 20px;
+}
+
+.service p {
+    margin: 10px 0 0;
+}
+
+.appointment-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #e64a19;
+}
+.classes-slider p{
+    font-size: 16px;
+    color: #181a17;
+    margin-bottom: 20px;
+}
+
 
 
